@@ -24,6 +24,7 @@
           $selected_auth_id= $_GET['auth'];
           $sql_select_auth_posts = "SELECT * FROM users WHERE id = {$selected_auth_id}";
           $result_sql_select_auth_post = mysqli_query($dbconnection, $sql_select_auth_posts);
+          $view_user_name = "";
                 while ($row_auth_post = mysqli_fetch_assoc($result_sql_select_auth_post))
                 {
                   $view_user_id = $row_auth_post['id'];

@@ -1,6 +1,6 @@
 <?php 
 	session_start();
-	$dbconnection = mysqli_connect('remotemysql.com', 'tGlXeaiQC0', 'etC2E1WJct', 'tGlXeaiQC0');
+	$dbconnection = mysqli_connect('localhost', 'root', '', 'virtuablog');
 	mysqli_set_charset($dbconnection, "utf8");
 	if (!$dbconnection)
 	{

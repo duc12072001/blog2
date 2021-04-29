@@ -1,9 +1,9 @@
 <?php
 class DBController {
-	private $host = "localhost";
-	private $user = "root";
-	private $password = "";
-	private $database = "virtuablog";
+	private $host = "remotemysql.com";
+	private $user = "tGlXeaiQC0";
+	private $password = "etC2E1WJct";
+	private $database = "tGlXeaiQC0";
 	private $conn;
 	
 	function __construct() {

@@ -75,7 +75,7 @@
             {
 
            ?>
-           <a href="profil.php/" class="btn btn-default btn-flat">Profil</a>
+           <a href="profil.php/" class="btn btn-default btn-flat">Profile</a>
            <?php } ?>
           <a href="layout/logout.php" class="btn btn-default btn-flat">Sign out</a></p>
         </div>
@@ -177,6 +177,38 @@
 
         <!-- Side Widget -->
         <div class="card my-4">
+          <h5 class="card-header">Latest posts</h5>
+          <?php 
+                $counter_popular= 0;
+                $sql_select_post_popular = "SELECT * FROM posts WHERE post_status = 1 ORDER BY post_edit_date DESC LIMIT 5";
+                $result_sql_select_post_popular = mysqli_query($dbconnection, $sql_select_post_popular);
+                while ($rowpost_popular = mysqli_fetch_assoc($result_sql_select_post_popular))
+                {
+                  $view_post_id_popular = $rowpost_popular['id'];
+                  $view_post_category_popular = $rowpost_popular['post_category'];
+                  $view_post_title_popular = $rowpost_popular['post_title'];
+                  $view_post_autor_popular = $rowpost_popular['post_autor'];
+                  $view_post_date_popular = $rowpost_popular['post_date'];
+                  $view_post_edit_date_popular = $rowpost_popular['post_edit_date'];
+                  $view_post_image_popular = $rowpost_popular['post_image'];
+                  $view_post_text_popular = $rowpost_popular['post_text'];
+                  $view_post_tag_popular = $rowpost_popular['post_tag'];
+                  $view_post_visit_counter_popular = $rowpost_popular['post_visit_counter'];
+                  $view_post_status_popular = $rowpost_popular['post_status'];
+                  $view_post_priority_popular = $rowpost_popular['post_priority'];
+                 
+                  $counter_popular++;
+                  
+             ?>
+          <div class="card-body">
+            <img class="card-img-top" src="admin/images/blog/<?php echo $view_post_image_popular;?>" alt="<?php echo $view_post_image_popular;?>">
+            <b>
+              <a href="post.php?postid=<?=$view_post_id_popular ?>"style="color: #cc0000"><?php echo $view_post_title_popular; ?></a></b>
+          </div>
+          <?php } ?>
+        </div>
+
+        <div class="card my-4">
           <h5 class="card-header">Popular posts</h5>
           <?php 
                 $counter_popular= 0;
@@ -207,4 +239,6 @@
           </div>
           <?php } ?>
         </div>
+
+        
    </div>
