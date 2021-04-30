@@ -19,9 +19,7 @@
       <!-- Blog Entries Column -->
       <div class="col-md-8">
 
-        <h1 class="my-4">Virtua PHP
-          <small>Simple CMS Blog</small>
-        </h1>
+        <h1 class="my-4">Virtua PHP</h1>
         <?php 
                 $no_posts_per_page = 5;
                 if (isset($_GET['page']))
