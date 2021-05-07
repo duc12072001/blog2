@@ -57,7 +57,7 @@
               <?php //echo $view_post_text; 
               echo substr($view_post_text, 0, 400) . "...";?>
             </p>
-            <a href="post.php?postid=<?= $view_post_id; ?>" class="btn btn-primary">Read More &rarr;</a>
+            <a href="post.php?postid=<?= $view_post_id; ?>" class="btn btn-primary">Đọc Thêm &rarr;</a>
           </div>
           <?php 
                 $sql_select_users_article = "SELECT * FROM users WHERE id={$view_post_autor}";
@@ -71,7 +71,7 @@
              ?>
           <div class="card-footer text-muted">
             <img src="admin/images/users/<?php echo $view_users_image; ?>" class="zoom3" alt="User Image" width="50" align="left" hspace="5">
-            By <a href="author.php?auth=<?= $view_users_id; ?>"><?php echo $view_users_name; ?></a> <br>Web developer <a href="#">VirtuaPHP</a>
+            <a href="author.php?auth=<?= $view_users_id; ?>"><?php echo $view_users_name; ?></a> <br>UET student <a href="#">VirtuaPHP</a>
             | <?php echo $view_post_date; ?>
           </div>
         </div>
