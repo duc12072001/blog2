@@ -12,30 +12,29 @@
             <a href="#" class="btn btn-info btn-block"><i class="fa fa-twitter"></i> Sign in with <b>Twitter</b></a>
       <a href="#" class="btn btn-danger btn-block"><i class="fa fa-google"></i> Sign in with <b>Google</b></a>
         </div>--> 
-    <div class="or-seperator"><i>Sign in</i></div>
+    <div class="or-seperator"><i>Đăng nhập</i></div>
     <form action="layout/login.php" method="post">
         <div class="form-group">
           <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-user"></i> </span>
-                <input type="text" class="form-control" name="username" placeholder="Username" required="required">
+                <input type="text" class="form-control" name="username" placeholder="Tên tài khoản" required="required">
             </div>
         </div>
     <div class="form-group">
             <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-lock"></i> </span>
-                <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+                <input type="password" class="form-control" name="password" placeholder="Mật khẩu" required="required">
             </div>
         </div>        
         <div class="form-group">
-            <button type="submit" name="login" class="btn btn-success btn-block login-btn">Sign in</button>
+            <button type="submit" name="login" class="btn btn-success btn-block login-btn">Đăng nhập</button>
         </div>
         <div class="clearfix">
-            <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>
-            <a href="#" class="pull-right text-success">Forgot Password?</a>
+            <label class="pull-left checkbox-inline"><input type="checkbox">Nhớ tài khoản</label>
+            <a href="#" class="pull-right text-success">Quên mật khẩu?</a>
         </div>  
         
     </form>
-    <div class="hint-text small">Don't have an account? <a href="#" class="text-success">Register Now!</a></div>
 </div>
  <?php 
             }
@@ -56,7 +55,7 @@
 <div class="card my-4">
         <div class="card-header">
           <p align="center"><img  class="zoom3" src="admin/images/users/<?php echo $success_login_image_admin; ?>" width="110"></p>
-          <p align="center"><b>Welcome <?php echo $success_login_name_admin; ?></b></p>
+          <p align="center"><b>Chào mừng <?php echo $success_login_name_admin; ?></b></p>
         </div>
         <div class="card-header">
           
@@ -68,16 +67,16 @@
                
 
              ?>
-          <a href="admin/" class="btn btn-default btn-flat" target="_blank">Administration</a>
+          <a href="admin/" class="btn btn-default btn-flat" target="_blank">Quản lý</a>
           <?php
            }
            else
             {
 
            ?>
-           <a href="profil.php/" class="btn btn-default btn-flat">Profile</a>
+           <a href="profil.php/" class="btn btn-default btn-flat">Hồ sơ</a>
            <?php } ?>
-          <a href="layout/logout.php" class="btn btn-default btn-flat">Sign out</a></p>
+          <a href="layout/logout.php" class="btn btn-default btn-flat">Đăng xuất</a></p>
         </div>
       </div>
       <?php 
@@ -87,7 +86,7 @@
 
         <!-- Search Widget -->
         <div class="card my-4">
-          <h5 class="card-header">Search</h5>
+          <h5 class="card-header">Tìm kiếm</h5>
           <div class="card-body">
             <form action="search.php" method="post">
             <div class="input-group">
@@ -102,7 +101,7 @@
 
         <!-- Categories Widget -->
         <div class="card my-4">
-          <h5 class="card-header">Categories</h5>
+          <h5 class="card-header">Phân loại</h5>
           <div class="card-body">
             <div class="row">
               <div class="col-lg-6">
@@ -177,7 +176,7 @@
 
         <!-- Side Widget -->
         <div class="card my-4">
-          <h5 class="card-header">Latest posts</h5>
+          <h5 class="card-header">Bài viết mới nhất</h5>
           <?php 
                 $counter_popular= 0;
                 $sql_select_post_popular = "SELECT * FROM posts WHERE post_status = 1 ORDER BY post_edit_date DESC LIMIT 5";
@@ -209,7 +208,7 @@
         </div>
 
         <div class="card my-4">
-          <h5 class="card-header">Popular posts</h5>
+          <h5 class="card-header">Bài viết nổi bật</h5>
           <?php 
                 $counter_popular= 0;
                 $sql_select_post_popular = "SELECT * FROM posts WHERE post_status = 1 ORDER BY post_visit_counter DESC LIMIT 0,5";
