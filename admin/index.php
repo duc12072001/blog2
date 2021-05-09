@@ -70,7 +70,7 @@
             <div class="icon">
               <i class="fa fa-file"></i>
             </div>
-            <a href="post_admin.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="post_admin.php" class="small-box-footer">Xem thêm <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -94,7 +94,7 @@
             <div class="icon">
               <i class="ion ion-person-add"></i>
             </div>
-            <a href="users_admin.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="users_admin.php" class="small-box-footer">Xem thêm <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -118,7 +118,7 @@
             <div class="icon">
               <i class="fa fa-comments"></i>
             </div>
-            <a href="comment_admin.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="comment_admin.php" class="small-box-footer">Xem thêm <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
