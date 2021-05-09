@@ -41,12 +41,12 @@
             <div class="inner">
               <h3><?php echo $count_categories; ?></h3>
 
-              <p>Categories</p>
+              <p>Phân loại</p>
             </div>
             <div class="icon">
               <i class="fa fa-server"></i>
             </div>
-            <a href="category_admin.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="category_admin.php" class="small-box-footer">Xem thêm <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -65,7 +65,7 @@
             <div class="inner">
               <h3><?php echo $counter_posts; ?></h3>
 
-              <p>Posts</p>
+              <p>Bài đăng</p>
             </div>
             <div class="icon">
               <i class="fa fa-file"></i>
@@ -89,7 +89,7 @@
             <div class="inner">
               <h3><?php echo $count_all_users; ?></h3>
 
-              <p>Users / Admin</p>
+              <p>Người dùng</p>
             </div>
             <div class="icon">
               <i class="ion ion-person-add"></i>
@@ -113,7 +113,7 @@
             <div class="inner">
               <h3><?php echo $count_all_comments ?></h3>
 
-              <p>Comments</p>
+              <p>Bình luận</p>
             </div>
             <div class="icon">
               <i class="fa fa-comments"></i>
