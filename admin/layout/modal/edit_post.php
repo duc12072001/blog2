@@ -9,15 +9,9 @@
         $edit_post_autor=$_POST['post_autor_edit'];
         $edit_post_date=$_POST['post_date_edit'];
         $edit_post_edit_date=$_POST['post_edit_date_edit'];
-        //$edit_post_image=$_POST['post_image_edit'];
+        $edit_post_image=$_POST['post_image_edit'];
         $new_post_image = $_FILES["new_post_image"]["name"];
         $new_post_image_temp = $_FILES["new_post_image"]["tmp_name"];
-        move_uploaded_file($new_post_image_temp,"images/blog/$new_post_image");
-        if (empty($new_post_image))
-        {
-         $new_post_image=$_POST['post_image_edit1'];
-        }
-
         $edit_post_text=$_POST['post_text_edit'];
         $edit_post_tag=$_POST['post_tag_edit'];
         $edit_post_visit_counter=$_POST['post_visit_counter_edit'];
@@ -103,7 +97,7 @@ function mouseOver() {
                      <img  class="zoom" src="" id="image" name="image" width="50">
                      
                     <br><br>
-                      <input type="file" name="new_post_image" id="new_post_image">
+                      <input type="text" class="form-control" id="post_image" name="post_image" placeholder="Enter Image URL Here" required="">
 
                   </div>
                   <div class="form-group shadow-textarea">
