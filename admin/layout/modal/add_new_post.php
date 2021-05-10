@@ -84,7 +84,7 @@
                   </div>
                   <div class="form-group">
                       <label for="post_imagel" class="col-form-label">Image:</label>
-                      <input type="text" class="form-control" id="post_image" name="post_image" placeholder="Enter Title Here" required="">
+                      <input type="text" class="form-control" id="post_image" name="post_image" placeholder="Enter Image URL Here" required="">
                   </div>
                   <div class="form-group shadow-textarea">
                     <label for="post_text" class="col-form-label">Text:</label>
