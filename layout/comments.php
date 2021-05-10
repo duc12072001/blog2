@@ -14,6 +14,7 @@ if (isset($_GET['postid']))
                   $view_comm_text = $rowcomment_for_post['comm_text'];
                   $view_comm_status = $rowcomment_for_post['comm_status'];
                   $view_comm_date = $rowcomment_for_post['comm_date'];
+                  $view_comm_timestamp = $rowcomment_for_post['comm_timestamp']
                   
 ?>
 
@@ -46,16 +47,22 @@ if (isset($_GET['postid']))
           <img class="zoom3" src="admin/images/users/<?php echo $view_users_image_for_comm; ?>" alt="" width="50">
           <div class="media-body">
            
-            <h5 class="mt-0">
+            <h4 class="mt-0">
             <?php 
             if (!empty($view_users_name_for_comm))
             {
               echo $view_users_name_for_comm; 
-            
+            ?>
+            <h6>
+            <?php
+              echo "  ";
+              echo $view_comm_timestamp;
+              echo "  ";
+              echo $view_comm_date;
             
             ?>
               
-            </h5>
+            </h4>
             <?php
            
               echo $view_comm_text; 
