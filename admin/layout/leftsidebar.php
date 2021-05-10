@@ -5,7 +5,7 @@
       <div class="user-panel">
         <div class="pull-left image">
           
-          <img src="<?php echo $success_login_image_admin; ?>" class="zoom3" alt="User Image">
+          <img src="images/users/<?php echo $success_login_image_admin; ?>" class="zoom3" alt="User Image">
         </div>
         <div class="pull-left info">
           <p><?php echo $success_login_name_admin; ?></p>
