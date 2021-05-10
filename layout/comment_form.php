@@ -1,5 +1,7 @@
     <?php
+      date_default_timezone_set("Asia/Ho_Chi_Minh");
       $current_date = date('d/m/Y');
+      $current_timestamp = date("H:i");
       if (isset($_POST['save_comment']))
       {
         $add_comm_posid = $selected_post_page;
@@ -11,7 +13,7 @@
         $add_comm_email = mysqli_real_escape_string($dbconnection, $add_comm_email);
         $add_comm_text = mysqli_real_escape_string($dbconnection, $add_comm_text);
 
-        $sql_add_comment = "INSERT INTO comments(postid, comm_autor, comm_email, comm_text, comm_status,comm_date) VALUES('$add_comm_posid', '$add_comm_autor', '$add_comm_email', '$add_comm_text', '0', '$current_date' )";
+        $sql_add_comment = "INSERT INTO comments(postid, comm_autor, comm_email, comm_text, comm_status,comm_date,comm_timestamp) VALUES('$add_comm_posid', '$add_comm_autor', '$add_comm_email', '$add_comm_text', '1', '$current_date', '$current_timestamp')";
         $result_sql_add_comment= mysqli_query($dbconnection, $sql_add_comment);
         echo "testiram";
         if (!$sql_add_comment)
@@ -31,7 +33,7 @@
           <h5 class="card-header">Để lại bình luận:</h5>
           <div class="card-body">
 
-            <form method="post" action="" onsubmit="myFunction()">
+            <form method="post" action="" onsubmit="">
               <div class="form-group">
                 <?php 
                    if (!isset($_SESSION['type']))
@@ -52,7 +54,7 @@
                  ?>
                  <p class="lead">
                    <img src="admin/images/users/<?php echo $success_login_image_admin; ?>" class="zoom3" alt="User Image" width="50" align="left" hspace="5">
-                      <a href="#"><?php echo $success_login_name_admin; ?></a> <br>Uet student <a href="#">VirtuaPHP</a>
+                      <a href="#"><?php echo $success_login_name_admin; ?></a> <br> 
                     
                   </p>
                 
