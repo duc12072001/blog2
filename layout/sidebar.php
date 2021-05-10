@@ -90,9 +90,9 @@
           <div class="card-body">
             <form action="search.php" method="post">
             <div class="input-group">
-              <input type="text" class="form-control" name="search_text" placeholder="Search for...">
+              <input type="text" class="form-control" name="search_text" placeholder="">
               <span class="input-group-btn">
-                <button class="btn btn-secondary" name="search" type="submit">Go!</button>
+                <button class="btn btn-secondary" name="search" type="submit">Tìm</button>
               </span>
             </div>
             </form>
