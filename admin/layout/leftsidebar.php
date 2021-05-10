@@ -5,7 +5,7 @@
       <div class="user-panel">
         <div class="pull-left image">
           
-          <img src="images/users/<?php echo $success_login_image_admin; ?>" class="zoom3" alt="User Image">
+          <img src="<?php echo $success_login_image_admin; ?>" class="zoom3" alt="User Image">
         </div>
         <div class="pull-left info">
           <p><?php echo $success_login_name_admin; ?></p>
@@ -24,10 +24,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="category_admin.php"><i class="fa fa-server"></i></i> Category</a></li>
-            <li><a href="post_admin.php"><i class="fa fa-file"></i> Post</a></li>
-            <li><a href="users_admin.php"><i class="fa fa-users"></i> Users</a></li>
-            <li><a href="comment_admin.php"><i class="fa fa-comments"></i> Comments</a></li>
+            <li><a href="category_admin.php"><i class="fa fa-server"></i></i> Phân loại</a></li>
+            <li><a href="post_admin.php"><i class="fa fa-file"></i> Bài đăng</a></li>
+            <li><a href="users_admin.php"><i class="fa fa-users"></i> Người dùng</a></li>
+            <li><a href="comment_admin.php"><i class="fa fa-comments"></i> Bình luận</a></li>
           </ul>
         </li>
         
