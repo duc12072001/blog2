@@ -200,7 +200,7 @@
                   
              ?>
           <div class="card-body">
-            <img class="card-img-top" src="admin/images/blog/<?php echo $view_post_image_popular;?>" alt="<?php echo $view_post_image_popular;?>">
+            <img class="card-img-top" src="<?php echo $view_post_image_popular;?>" alt="<?php echo $view_post_image_popular;?>">
             <b>
               <a href="post.php?postid=<?=$view_post_id_popular ?>"style="color: #cc0000"><?php echo $view_post_title_popular; ?></a></b>
           </div>
@@ -232,7 +232,7 @@
                   
              ?>
           <div class="card-body">
-            <img class="card-img-top" src="admin/images/blog/<?php echo $view_post_image_popular;?>" alt="<?php echo $view_post_image_popular;?>">
+            <img class="card-img-top" src="<?php echo $view_post_image_popular;?>" alt="<?php echo $view_post_image_popular;?>">
             <b>
               <a href="post.php?postid=<?=$view_post_id_popular ?>"style="color: #cc0000"><?php echo $view_post_title_popular; ?></a></b>
           </div>
