@@ -77,22 +77,30 @@ else
           <img class="zoom3" src="admin/images/users/nophoto-default.jpg" alt="" width="50">
           <div class="media-body">
            
-            <h5 class="mt-0">
+            <h4 class="mt-0">
             <?php 
             if (!empty($view_comm_autor))
             {
               echo $view_comm_autor; 
-            
-            
             ?>
               
-            </h5>
+            </h4>
             <?php
            
               echo $view_comm_text; 
            }
             
             ?>
+
+            <h6>
+            <?php
+              echo "  ";
+              echo $view_comm_timestamp;
+              echo "  ";
+              echo $view_comm_date;
+            ?>
+            
+            </h6>
 
           </div>
         </div>
