@@ -8,21 +8,7 @@
         $add_user_password1=$_POST['user_password'];
         $add_user_password=md5($add_user_password1);
         $add_user_gender=$_POST['user_gender'];
-        //$add_user_image=$_POST['user_image'];
-
-        $image_extension = pathinfo($_FILES["user_image"]["name"], PATHINFO_EXTENSION);
-        if ($image_extension=='jpg' || $image_extension=='jpeg' || $image_extension=='png' || $image_extension=='gif') 
-        {
-          $add_user_image = $_FILES["user_image"]["name"];
-          $add_user_image_temp = $_FILES["user_image"]["tmp_name"];
-        }
-        
-        if (empty($add_user_image))
-        {
-         $add_user_image="nophoto-default.jpg";
-        }
-         move_uploaded_file($add_user_image_temp,"images/users/$add_user_image");
-
+        $add_user_image=$_POST['user_image'];
         $add_user_code=$_POST['user_code'];
         $add_user_status=$_POST['user_status'];
         $add_user_type=$_POST['user_type'];
@@ -85,7 +71,7 @@
                 </div>
                 <div class="form-group col-md-4">
                       <label for="user_imagel" class="col-form-label">Image:</label>
-                      <input type="file" name="user_image" id="user_image">
+                      <input type="text" class="form-control" id="post_image" name="post_image" placeholder="Enter Image URL Here" required="">
                 </div>
                 <div class="form-group col-md-4">
                   <label for="cat_title" class="col-form-label"> Gender:</label><br>
