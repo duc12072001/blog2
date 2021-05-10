@@ -188,7 +188,7 @@
                       } 
               ?>
               <td style="text-align: center;"><?php echo $view_cat_title_by_id ?></td>
-              <td style="text-align: center;"><img  class="zoom" src="images/blog/<?php  echo $view_post_image; ?>" width="50"></td>
+              <td style="text-align: center;"><img  class="zoom" src="<?php  echo $view_post_image; ?>" width="50"></td>
               <td style="text-align: center;"><span class="label label-success"><?php echo $view_post_visit_counter ?></span></td>
               <?php 
                 if ($view_post_status==1)
