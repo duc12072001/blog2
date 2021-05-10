@@ -8,19 +8,7 @@
         $add_post_autor=$_POST['post_autor'];
         $add_post_date=$_POST['post_date'];
         $add_post_edit_date=$current_date;
-        //$add_post_image=$_POST['post_image'];
-        $image_extension = pathinfo($_FILES["post_image"]["name"], PATHINFO_EXTENSION);
-        if ($image_extension=='jpg' || $image_extension=='jpeg' || $image_extension=='png' || $image_extension=='gif') 
-        {
-          $add_post_image = $_FILES["post_image"]["name"];
-          $add_post_image_temp = $_FILES["post_image"]["tmp_name"];
-        }
-        
-        if (empty($add_post_image))
-        {
-         $add_post_image="nophoto-default.jpg";
-        }
-         move_uploaded_file($add_post_image_temp,"images/blog/$add_post_image");
+        $add_post_image=$_POST['post_image'];
 
         $add_post_text=$_POST['post_text'];
         $add_post_tag=$_POST['post_tag'];
@@ -96,7 +84,7 @@
                   </div>
                   <div class="form-group">
                       <label for="post_imagel" class="col-form-label">Image:</label>
-                      <input type="file" name="post_image" id="post_image" accept="image/*">
+                      <input type="text" class="form-control" id="post_image" name="post_image" placeholder="Enter Title Here" required="">
                   </div>
                   <div class="form-group shadow-textarea">
                     <label for="post_text" class="col-form-label">Text:</label>
