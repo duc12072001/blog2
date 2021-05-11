@@ -10,6 +10,7 @@
         $edit_post_date=$_POST['post_date_edit'];
         $edit_post_edit_date=$_POST['post_edit_date_edit'];
         $edit_post_image=$_POST['post_image_edit'];
+        $edit_post_image = mysqli_real_escape_string($dbconnection,$edit_post_image);
         $new_post_image = $_FILES["new_post_image"]["name"];
         $new_post_image_temp = $_FILES["new_post_image"]["tmp_name"];
         $edit_post_text=$_POST['post_text_edit'];
