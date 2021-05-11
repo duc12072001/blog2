@@ -9,7 +9,7 @@
         $add_post_date=$_POST['post_date'];
         $add_post_edit_date=$current_date;
         $add_post_image=$_POST['post_image'];
-
+        $add_post_image = mysqli_real_escape_string($dbconnection,$add_post_image);
         $add_post_text=$_POST['post_text'];
         $add_post_tag=$_POST['post_tag'];
         $add_post_visit_counter=$_POST['post_visit_counter'];
