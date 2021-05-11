@@ -72,7 +72,7 @@
              ?>
         <!-- Blog Post -->
         <div class="card mb-4">
-          <img class="card-img-top" src="admin/images/blog/<?php  echo $view_post_image; ?>" alt="Card image cap">
+          <img class="card-img-top" src="<?php  echo $view_post_image; ?>" alt="Card image cap">
           <div class="card-body">
             <h2 class="card-title"><?php echo $view_post_title; ?></h2>
             <p class="card-text">
@@ -92,7 +92,7 @@
                 } 
              ?>
           <div class="card-footer text-muted">
-            <img src="admin/images/users/<?php echo $view_users_image; ?>" class="zoom3" alt="User Image" width="50" align="left" hspace="5">
+            <img src="<?php echo $view_users_image; ?>" class="zoom3" alt="User Image" width="50" align="left" hspace="5">
             By <a href="#"><?php echo $view_users_name; ?></a> <br>Web developer <a href="#">VirtuaPHP</a>
             | <?php echo $view_post_date; ?>
           </div>
