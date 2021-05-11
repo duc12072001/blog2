@@ -92,7 +92,7 @@
                 } 
              ?>
           <div class="card-footer text-muted">
-            <img src="<?php echo $view_users_image; ?>" class="zoom3" alt="User Image" width="50" align="left" hspace="5">
+            <img src="admin/images/users/<?php echo $view_users_image; ?>" class="zoom3" alt="User Image" width="50" align="left" hspace="5">
             By <a href="#"><?php echo $view_users_name; ?></a> <br>Web developer <a href="#">VirtuaPHP</a>
             | <?php echo $view_post_date; ?>
           </div>
