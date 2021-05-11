@@ -42,7 +42,7 @@
             <a href=""> <i class="fas fa-envelope"></i></a>&nbsp;&nbsp;<a href=""><i class="fab fa-facebook"></i></a>
           </div> <div class="card-footer text-muted">UET student.</div>
 
-        <h3 class="my-4">The Latest from<?php echo $view_user_name; ?>
+        <h3 class="my-4">Những bài viết mới nhất của <?php echo $view_user_name; ?>
           <!-- <small>Secondary Text</small>-->
         </h1>
         <?php 
