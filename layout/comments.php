@@ -49,17 +49,9 @@ if (isset($_GET['postid']))
            
             <h4 class="mt-0">
             <?php 
-            if (!empty($view_users_name_for_comm))
+            if (!empty($view_comm_autor))
             {
-              echo $view_users_name_for_comm; 
-            ?>
-            <h6>
-            <?php
-              echo "  ";
-              echo $view_comm_timestamp;
-              echo "  ";
-              echo $view_comm_date;
-            
+              echo $view_comm_autor; 
             ?>
               
             </h4>
@@ -67,6 +59,18 @@ if (isset($_GET['postid']))
            
               echo $view_comm_text; 
            }
+            
+            ?>
+
+            <h6>
+            <?php
+              echo "  ";
+              echo $view_comm_timestamp;
+              echo "  ";
+              echo $view_comm_date;
+            ?>
+            
+            </h6>
             
             ?>
 
