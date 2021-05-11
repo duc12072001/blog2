@@ -72,7 +72,6 @@ if (isset($_GET['postid']))
             
             </h6>
             
-            ?>
 
           </div>
         </div>
