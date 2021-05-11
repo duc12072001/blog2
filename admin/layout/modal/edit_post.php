@@ -11,8 +11,6 @@
         $edit_post_edit_date=$_POST['post_edit_date_edit'];
         $edit_post_image=$_POST['post_image_edit'];
         $edit_post_image = mysqli_real_escape_string($dbconnection,$edit_post_image);
-        $new_post_image = $_FILES["new_post_image"]["name"];
-        $new_post_image_temp = $_FILES["new_post_image"]["tmp_name"];
         $edit_post_text=$_POST['post_text_edit'];
         $edit_post_tag=$_POST['post_tag_edit'];
         $edit_post_visit_counter=$_POST['post_visit_counter_edit'];
@@ -20,7 +18,7 @@
         $edit_post_priority=$_POST['post_priority_edit'];
 
 
-        $sql_edit_post = "UPDATE posts SET post_category='$edit_post_category', post_title='$edit_post_title', post_autor='$edit_post_autor',post_date='$edit_post_date',post_edit_date='$current_date', post_image='$new_post_image',post_text='$edit_post_text', post_tag='$edit_post_tag', post_visit_counter='$edit_post_visit_counter', post_status ='$edit_post_status', post_priority = '$edit_post_priority' WHERE id={$edit_post_id}";
+        $sql_edit_post = "UPDATE posts SET post_category='$edit_post_category', post_title='$edit_post_title', post_autor='$edit_post_autor',post_date='$edit_post_date',post_edit_date='$current_date', post_image='$edit_post_image',post_text='$edit_post_text', post_tag='$edit_post_tag', post_visit_counter='$edit_post_visit_counter', post_status ='$edit_post_status', post_priority = '$edit_post_priority' WHERE id={$edit_post_id}";
         $result_sql_edit_post= mysqli_query($dbconnection, $sql_edit_post);
         if (!$result_sql_edit_post)
                 {
@@ -98,7 +96,7 @@ function mouseOver() {
                      <img  class="zoom" src="" id="image" name="image" width="50">
                      
                     <br><br>
-                      <input type="text" class="form-control" id="post_image_edit" name="post_image_edit" placeholder="Enter Image URL Here" required="">
+                      <input type="text" class="form-control" id="post_image_edit" name="post_image_edit" placeholder="Enter Image URl Here" required="">
 
                   </div>
                   <div class="form-group shadow-textarea">
