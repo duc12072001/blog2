@@ -98,7 +98,7 @@ function mouseOver() {
                      <img  class="zoom" src="" id="image" name="image" width="50">
                      
                     <br><br>
-                      <input type="text" class="form-control" id="post_image" name="post_image" placeholder="Enter Image URL Here" required="">
+                      <input type="text" class="form-control" id="post_image_edit" name="post_image_edit" placeholder="Enter Image URL Here" required="">
 
                   </div>
                   <div class="form-group shadow-textarea">
