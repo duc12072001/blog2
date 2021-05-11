@@ -37,8 +37,8 @@
                 if (isset($_POST['search']))
               {
                  $search_text = $_POST['search_text'];
-                 $sql_select_post = "SELECT * FROM posts WHERE post_status = 1 AND post_title LIKE '%$search_text%' OR post_text LIKE '%$search_text%' ORDER BY id DESC LIMIT {$start},{$no_posts_per_page}";
-              
+                 $sql_select_post = "SELECT * FROM posts WHERE post_status = 1 AND post_title LIKE '%$search_text%' OR post_text LIKE '%$search_text%' OR post_tag LIKE '%$search_text%' ORDER BY id DESC LIMIT {$start},{$no_posts_per_page}";
+                
              
                   
               }
