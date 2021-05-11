@@ -179,7 +179,7 @@
           <h5 class="card-header">Bài viết mới nhất</h5>
           <?php 
                 $counter_popular= 0;
-                $sql_select_post_popular = "SELECT * FROM posts WHERE post_status = 1 ORDER BY post_edit_date DESC LIMIT 5";
+                $sql_select_post_popular = "SELECT * FROM posts WHERE post_status = 1 ORDER BY post_edit_date ASC LIMIT 5";
                 $result_sql_select_post_popular = mysqli_query($dbconnection, $sql_select_post_popular);
                 while ($rowpost_popular = mysqli_fetch_assoc($result_sql_select_post_popular))
                 {
