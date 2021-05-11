@@ -76,7 +76,7 @@
               <?php //echo $view_post_text; 
               echo substr($view_post_text, 0, 400) . "...";?>
             </p>
-            <a href="#" class="btn btn-primary">Read More &rarr;</a>
+            <a href="#" class="btn btn-primary">Xem thêm &rarr;</a>
           </div>
        
         </div>
