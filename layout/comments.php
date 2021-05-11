@@ -49,9 +49,9 @@ if (isset($_GET['postid']))
            
             <h4 class="mt-0">
             <?php 
-            if (!empty($view_comm_autor))
+            if (!empty($view_users_name_for_comm))
             {
-              echo $view_comm_autor; 
+              echo $view_users_name_for_comm; 
             ?>
               
             </h4>
@@ -89,9 +89,9 @@ else
            
             <h4 class="mt-0">
             <?php 
-            if (!empty($view_users_name_for_comm))
+            if (!empty($view_comm_autor))
             {
-              echo $view_users_name_for_comm; 
+              echo $view_comm_autor; 
             ?>
               
             </h4>
